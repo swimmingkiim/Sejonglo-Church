@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: inline-block;
-  min-width: 3em;
+  display: block;
+  width: 10%;
   height: auto;
   position: relative;
   z-index: 1;
@@ -31,6 +31,7 @@ export const Menu = styled.div`
 `;
 
 export const List = styled.ul`
+  width: 100%;
   display: none;
   list-style-type: none;
   margin: 0;
@@ -40,7 +41,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  min-width: 3em;
+  width: 100%;
   height: auto;
   padding: 0.5%;
   color: #000000;
