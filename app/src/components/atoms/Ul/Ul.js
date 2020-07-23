@@ -8,8 +8,8 @@ const Ul = ({ list }) => {
     <Style.Ul>
       {list.map((item) => {
         return (
-          <Style.Li key={item.content}>
-            <Link to={item.link}>{item.content}</Link>
+          <Style.Li key={item.keyword}>
+            <Link to={item.link}>{item.keyword}</Link>
           </Style.Li>
         );
       })}

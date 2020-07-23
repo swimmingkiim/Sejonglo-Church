@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: block;
-  width: 10%;
+  width: 15%;
+  min-width: 7em;
   height: auto;
   position: relative;
   z-index: 1;
   color: #000000;
   background-color: pink;
-  font-size: 150%;
+  font-size: 1.5em;
   text-align: center;
 
   &:hover {
@@ -25,12 +26,21 @@ export const Wrapper = styled.div`
 export const Menu = styled.div`
   width: 100%;
   height: auto;
-  padding: 0.5%;
+  padding: 5%;
   color: #000000;
   background-color: pink;
 `;
 
 export const List = styled.ul`
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   width: 100%;
   display: none;
   list-style-type: none;
@@ -38,12 +48,13 @@ export const List = styled.ul`
   padding: 0;
   position: absolute;
   z-index: 1;
+  animation: show 0.5s;
 `;
 
 export const ListItem = styled.li`
   width: 100%;
   height: auto;
-  padding: 0.5%;
+  padding: 5%;
   color: #000000;
   background-color: pink;
 

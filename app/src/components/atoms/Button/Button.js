@@ -5,10 +5,11 @@ import * as Style from "./style";
 const Button = ({
   type = "button",
   content = "blank",
+  color = "red",
   onClick = (e) => true,
 }) => {
   const classString = `button ${content}`;
-  const properties = { type, onClick };
+  const properties = { type, color, onClick };
 
   return <Style.Button {...properties}>{content}</Style.Button>;
 };

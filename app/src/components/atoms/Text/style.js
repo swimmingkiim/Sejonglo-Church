@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Text = styled.p`
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 2%;
   margin: 0;
