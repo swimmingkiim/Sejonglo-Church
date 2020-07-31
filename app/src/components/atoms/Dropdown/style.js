@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: block;
-  width: 15%;
+  width: 10%;
   min-width: 7em;
   height: auto;
   position: relative;
