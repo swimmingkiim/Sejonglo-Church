@@ -7,9 +7,9 @@ const Navigation = ({ list }) => {
   return (
     <Style.Nav>
       <Style.Ul>
-        {list.map(({ name, subArray }) => {
+        {list.map(({ name, subArray }, index) => {
           return (
-            <Style.Li key={`${name}-${subArray.length}`}>
+            <Style.Li key={`${name}-${index}`}>
               <Dropdown name={name} list={subArray} />
             </Style.Li>
           );
